@@ -3,7 +3,7 @@
 // 0, 7, 8, -2, -2 -> 2
 // 1, -7, 567, 89, 223-> 3
 
-int FillArrayAndFindHowMuchPositiveNumbers(string[] array)
+int FindHowMuchPositiveNumbers(string[] array)
 {
     int count = 0;
     for (int i = 0; i < array.Length; i++)
@@ -31,5 +31,5 @@ string[] CreateArray(string text)
 }
 
 string[] array = CreateArray("Введите числа через запятую: ");
-int count = FillArrayAndFindHowMuchPositiveNumbers(array);
+int count = FindHowMuchPositiveNumbers(array);
 Console.WriteLine($" -> {count}");
